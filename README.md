@@ -24,3 +24,9 @@ POM 구조로 테스트 자동화 스크립트를 업로드 하는 곳입니다.
   * Pages 디렉토리 내의 .py 들은 각 페이지에서 고유하게 가지고 있지만 재사용 해야하는 엘레멘트의 위치나 함수를 모아놓고 있어요. 테스트 스크립트 내 객체를 생성하여 재사용 하도록 하고 있어요.
   * Chormedriver 는 conftest.py에서 install하여 사용하도록 하고 있어요
   * pip install 을 통해 설치가 필요한 것들이 있어요! (ex : selenium , pandas , pytest, pytest-dependency 등)
+
+
+
+
+*기존 하드코딩 형태의 스크립트 
+https://github.com/IWlastnameisKim/POM_automated_test_practice.git
