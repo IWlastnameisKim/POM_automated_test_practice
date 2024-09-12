@@ -11,11 +11,11 @@ class TestLogin_001(TestBase):
     @pytest.mark.dependency(name="test_login_001_valid", scope="session")
     def test_login_valid(self):
         login_page = LoginPage(self.driver)        
-        self.driver.get('https://fastcampus.co.kr/account/sign-in')
+        self.driver.get('TestURL') # 테스트 URL 로 변경해주세요
         self.WebDriverWait(self.driver, 10).until(self.EC.visibility_of_all_elements_located)
-        login_page.enter_ID('rladlsdnjs3@naver.com')
+        login_page.enter_ID(ID') # 테스트할 ID로 변경해주세요
         time.sleep(1)
-        login_page.enter_PW('qlalfqjsgh1!')
+        login_page.enter_PW('PW') # 테스트할 PW로 변경해주세요
         time.sleep(1)
         login_page.select_loginbtn()
         time.sleep(1)
