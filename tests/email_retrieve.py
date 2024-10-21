@@ -71,9 +71,9 @@ with imaplib.IMAP4_SSL('imap.naver.com') as imap :
 
     # 비밀번호 초기화 링크 같이 특정 링크를 가져오기
     soup = BeautifulSoup(body, 'html.parser')
-
-    reset_links = soup.find_all('a', href=True)
     reset_link = None
+    reset_links = soup.find_all('a', href=True)
+    
     for a in reset_links : 
         pw_href = a.get('href')
         if "reset-password" in pw_href : #reset-password 가 href에 있을 경우 해당 주소를 반환함
